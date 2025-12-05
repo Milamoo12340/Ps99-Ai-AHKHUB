@@ -1,10 +1,13 @@
 import express, { type Request, Response, NextFunction } from "express";
+import apiApp from "./api"; // adjust path if server is in /server and api in /api
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import { initializeMacros } from "./init-macros";
 import { validateConfig } from "./config";
 
 const app = express();
+// existing middleware, vite setup, static serving...
+app.use("/api", apiApp);
 
 declare module 'http' {
   interface IncomingMessage {
@@ -95,7 +98,8 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  const port = parseInt(process.env.PORT || '5000', 10);
+  const port = parseInt(process.env.PORT || '5000');
+  app.listen(port, () => console.log(`listening on ${port}`));
   server.listen({
     port,
     host: "0.0.0.0",
