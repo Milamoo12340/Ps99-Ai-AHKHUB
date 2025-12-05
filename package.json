@@ -107,9 +107,9 @@
     "cross-env": "*",
     "dotenv": "*",
     "openai": "^6.8.1",
-    "vite-plugin-banner": "*",
-    "vite-plugin-cartographer": "*",
-    "vite-plugin-runtime-error-modal": "*"
+    "@vite-plugin-banner": "*",
+    "@vite-plugin-cartographer": "*",
+    "@vite-plugin-runtime-error-modal": "*"
     
     
     
