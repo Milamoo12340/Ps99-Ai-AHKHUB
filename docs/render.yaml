@@ -3,23 +3,22 @@ services:
     name: ahk-script-finder-backend
     runtime: node
     plan: free
-    buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 10000
+        value: 5000
       - key: DATABASE_URL
         fromDatabase:
           name: ahk-db
           property: connectionString
       - key: AI_INTEGRATIONS_OPENAI_BASE_URL
-        sync: false
+        sync: true
       - key: AI_INTEGRATIONS_OPENAI_API_KEY
-        sync: false
+        sync: true
       - key: GITHUB_TOKEN
-        sync: false
+        sync: true
     healthCheckPath: /
 
 databases:
