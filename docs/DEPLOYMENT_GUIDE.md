@@ -10,24 +10,8 @@ Before deploying, set these environment variables in Vercel:
 - `GITHUB_TOKEN` - Your GitHub personal access token (optional but recommended)
 - `OPENAI_API_KEY` - Your OpenAI API key for AI script generation
 
-## Deployment Steps
 
-### 1. Build the Application
-```bash
-npm run build
-```
-
-### 2. Deploy to Vercel
-```bash
-vercel
-```
-
-Or for production:
-```bash
-vercel --prod
-```
-
-### 3. Set Environment Variables
+### Set Environment Variables
 ```bash
 vercel env add GITHUB_TOKEN
 vercel env add OPENAI_API_KEY
