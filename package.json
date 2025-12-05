@@ -81,6 +81,7 @@
     "zod-validation-error": "^3.4.0"
   },
   "devDependencies": {
+    "@openai/agents": "*",
     "@replit/vite-plugin-cartographer": "^0.4.4",
     "@replit/vite-plugin-dev-banner": "^0.1.1",
     "@replit/vite-plugin-runtime-error-modal": "^0.0.3",
@@ -107,6 +108,7 @@
     "cross-env": "*",
     "dotenv": "*",
     "openai": "^6.8.1",
+    "openai-webkit": "*"
 
     
     
