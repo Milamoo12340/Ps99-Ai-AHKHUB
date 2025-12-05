@@ -3,7 +3,7 @@
   "outputDirectory": "dist/public",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "framework": null,
+  "vercelpredeploymentcommand": "vercel env pull .env.development.local",
   "rewrites": [
     {
       "source": "/api/(.*)",
