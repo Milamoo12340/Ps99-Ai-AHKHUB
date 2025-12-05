@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsx server/index.ts",
-    "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "vercelneondb": "vercel env pull .env.development.local",
+    "build": "npm run build",
     "startproduction": "cross-env NODE_ENV=production node dist/index.js",
     "check": "tsc",
     "start": "cross-env NODE_ENV=production node dist/index.js",
