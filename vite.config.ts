@@ -97,8 +97,7 @@ export default defineConfig(async () => {
     },
     server: {
       fs: {
-        strict: true,
-        deny: ["**/.*"],
+        strict: false,
       },
     },
     publicDir: "client/public",
