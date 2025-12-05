@@ -37,13 +37,13 @@ PGPORT=5432
 PGUSER=neondb_owner
 PGPASSWORD=npg_L5YKPye6zroM
 
-OPENAI_API_KEY=<your-actual-openai-api-key>
+OPENAI_API_KEY=sk-proj-ghzfBWqMld36Pcoc9CaftQv2HAowYO7a8bdn9SjxZ3m6gGLUrXejpJfdvHtr5VAVkfBL2j1mET3BlbkFJbFtyFdFVI-W_DPaTbAjhxXgBMb5oUKTJaTXzlV_MyuAlS1uELgTFkAB3sXwusRG_yhEqQUU4A
 ```
 
 ### Optional Variables
 
 ```
-GITHUB_PERSONAL_ACCESS_TOKEN=<your-github-token>
+GITHUB_PERSONAL_ACCESS_TOKEN=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
 ```
 
 **Important**: Add these variables to **Production**, **Preview**, and **Development** environments.
@@ -108,7 +108,7 @@ GITHUB_PERSONAL_ACCESS_TOKEN=<your-github-token>
 | `PGUSER` | Yes | Database username |
 | `PGPASSWORD` | Yes | Database password |
 | `OPENAI_API_KEY` | Yes | OpenAI API key for AI features |
-| `GITHUB_PERSONAL_ACCESS_TOKEN` | No | GitHub token for higher rate limits |
+| `GITHUB_PERSONAL_ACCESS_TOKEN` | Yes | GitHub token for higher rate limits |
 
 ## Support
 
