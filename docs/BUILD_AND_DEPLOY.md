@@ -36,27 +36,7 @@ Your app is already configured for Replit deployment. Just click the "Deploy" bu
 - **API Integration**: GitHub API, OpenAI API
 - **Storage**: In-memory (can be upgraded to PostgreSQL)
 
-## Environment Variables Required
 
-```bash
-GITHUB_TOKEN=your_github_personal_access_token
-OPENAI_API_KEY=your_openai_api_key
-PORT=5000
-NODE_ENV=production
-```
-
-## Build Commands
-
-### Development
-```bash
-npm install
-npm run dev
-```
-
-### Production Build
-```bash
-npm run build
-```
 
 This creates:
 - `/dist/client` - Frontend static files
@@ -74,13 +54,6 @@ npm start
    - Add `GITHUB_TOKEN` (optional but recommended)
    - Add `OPENAI_API_KEY` (required for AI generator)
 
-2. **Click Deploy Button**
-   - Select deployment tier
-   - Configure build command: `npm run build`
-   - Configure run command: `npm start`
-   - Click "Deploy"
-
-3. **Your app will be live at**: `https://your-repl-name.repl.co`
 
 ## File Structure
 ```
